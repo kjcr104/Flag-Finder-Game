@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Flag Finder</title>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://js.arcgis.com/4.34/"></script>
+</head>
+
+<body>
+
+<div id="sidebar">
+
+    <div id="startScreen">
+
+        <h1>FlagFinder</h1>
+
+        <p class="tagline">
+            Match the flag to the country
+        </p>
+
+        <div class="card">
+
+            <h2>Easy</h2>
+
+            <p>Country names visible</p>
+
+            <button id="easyBtn">
+                Start Easy
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Hard</h2>
+
+            <p>Country names hidden</p>
+
+            <button id="hardBtn">
+                Start Hard
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="gameScreen" class="hidden">
+
+        <h1>FlagFinder</h1>
+
+        <div class="card">
+
+            <p><strong>Difficulty:</strong> <span id="difficultyLabel"></span></p>
+
+            <p><strong>Round:</strong> <span id="roundLabel"></span></p>
+
+            <p><strong>Score:</strong> <span id="scoreLabel">0</span></p>
+
+        </div>
+
+        <img id="flag">
+
+        <div id="status">
+            Click the matching country.
+        </div>
+
+        <button id="skipBtn">
+            Skip
+        </button>
+
+        <button id="nextBtn" class="hidden">
+            Next Question
+        </button>
+
+    </div>
+
+    <div id="resultScreen" class="hidden">
+
+        <h1>Game Complete</h1>
+
+        <div id="results"></div>
+
+        <button id="restartBtn">
+            Play Again
+        </button>
+
+    </div>
+
+</div>
+
+<div id="viewDiv"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

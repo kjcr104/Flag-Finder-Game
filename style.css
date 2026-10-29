@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    display:flex;
+    height:100vh;
+    font-family:Segoe UI,sans-serif;
+}
+
+#sidebar{
+    width:380px;
+    background:#1e3a5f;
+    padding:20px;
+    color:white;
+    overflow-y:auto;
+}
+
+#viewDiv{
+    flex:1;
+}
+
+.hidden{
+    display:none;
+}
+
+.card{
+    background:white;
+    color:#111;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+#flag{
+    width:100%;
+    background:white;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.correct{
+    background:#d1fae5;
+    color:#065f46;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.incorrect{
+    background:#fee2e2;
+    color:#991b1b;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.infoCard{
+    background:white;
+    color:black;
+    padding:15px;
+    border-radius:10px;
+}
